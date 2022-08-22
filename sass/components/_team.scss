@@ -1,0 +1,112 @@
+/* СЕКЦИЯ НАША КОМАНДА */
+
+.team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #f5f4fa;
+  @media screen and (min-width: 1201px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.team__header {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+}
+.team__persons {
+  @media screen and (min-width: 769px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  @media screen and (min-width: 1201px) {
+    flex-wrap: nowrap;
+  }
+}
+.person {
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+  background-color: $white;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 769px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1201px) {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .person:not(:first-child) {
+    margin: 0;
+  }
+}
+.person__img {
+  width: 100%;
+  object-fit: scale-down;
+  object-position: center;
+}
+
+.person__cardcaption {
+  padding: 30px 0 24px 0;
+}
+.person__name {
+  color: $dark-grey;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.person__position {
+  color: $grey;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.sotial-nets {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.sotial-net__link {
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $blue;
+    color: $white;
+    transition: S background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus {
+    background-color: $blue;
+    color: $white;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.sotial-nets__icon,
+.client__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: currentColor;
+}

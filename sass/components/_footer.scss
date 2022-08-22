@@ -1,0 +1,150 @@
+/* СЕКЦИЯ ПОДВАЛА */
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .conteiner {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: left;
+    align-items: baseline;
+  }
+}
+.footer__info {
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-right: 165px;
+    margin-left: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+.logo.logo--white {
+  color: $white;
+}
+
+.footer__address {
+  display: block;
+  margin-top: 20px;
+  font-style: normal;
+  color: $white;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+.footer__mail {
+  display: block;
+  margin-top: 9px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+.footer__tel {
+  display: block;
+  margin-top: 9px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
+
+.join-us {
+  margin-top: 60px;
+  @media screen and (min-width: 769px) {
+    display: inline-block;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: left;
+    margin-left: 75px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .join-us {
+    margin-top: 0;
+  }
+}
+.join-us__invaite-text {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 20px;
+}
+
+.sotial-net__link--grey {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $white;
+}
+
+.signup_form {
+  margin-top: 60px;
+  @media screen and (min-width: 769px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-left: 94px;
+  }
+}
+.signup_form__header {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white;
+}
+.signup_form__input {
+  width: 358px;
+  height: 50px;
+  color: $white;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  line-height: 20px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.button--new-proprty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-signup_form button:hover,
+.new_oder-buttom:hover {
+  cursor: pointer;
+}
+.footer-signup_form button:active,
+.new_oder-buttom:active {
+  transform: scale(0.9);
+}
