@@ -160,6 +160,7 @@ body.modal-menu-open{overflow: hidden;}
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    column-gap: 30px;
   }
 }
 .contact__link {

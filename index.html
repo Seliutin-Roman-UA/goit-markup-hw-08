@@ -143,10 +143,12 @@
       <!-- РАЗМЕТКА СЕКЦИИ ГЕРОЯ  -->
 
       <section class="hero">
+        <div class="conteiner">
         <h2 class="hero__title">Эффективные решения для вашего бизнеса</h2>
         <button class="button hero__button--position" type="button">
           Заказать услугу
         </button>
+        </div>
         <!-- /* МОДАЛЬНОЕ ОКНО И ФОРМА ЗАКАЗА */ -->
         <div class="backdrop backdrop--is-hidden" id="modal">
           <!-- /* НЕПОСРЕДСТВЕННО ФОРМА ЗАКАЗА */ -->
@@ -156,6 +158,7 @@
                 <use href="./images/symbol-defs.svg#icon-cross"></use>
               </svg>
             </button>
+            
 
             <p class="oder-form__caption">
               Оставте свои данные, мы вам перезвоним
@@ -226,11 +229,9 @@
 
       <section class="spetial-feature">
         <div class="conteiner">
-
           <h2 class="spetial-feature__header">Особенности</h2>
 
           <ul class="spetial-feature__list">
-
             <li class="spetial-feature__item">
               <div class="spetial-feature__wrapper">
                 <svg class="spetial-feature__icon" width="70px" height="70px">
@@ -297,7 +298,7 @@
             <li class="service__item">
               <img
                 class="servise__img"
-                src="./images/img-one.jpg"
+                src="./images/s1.jpg"
                 alt="Код программы на экраме планшета"
                 width="370"
                 height="294"
@@ -307,7 +308,7 @@
             <li class="service__item">
               <img
                 class="servise__img"
-                src="./images/img-two.jpg"
+                src="./images/s2.jpg"
                 alt="Мобильный телефон в руке"
                 width="370"
                 height="294"
@@ -317,7 +318,7 @@
             <li class="service__item">
               <img
                 class="servise__img"
-                src="./images/img-three.jpg"
+                src="./images/s3.jpg"
                 alt="Цветовая палитра на экране планшета"
                 width="370"
                 height="294"
@@ -338,7 +339,8 @@
             <li class="person">
               <img
                 class="person__img"
-                src="./images/team-one.jpg"
+                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
+                src="./images/team1.jpg"
                 alt="фото Игоря Демьяненко"
               />
               <div class="person__cardcaption">
@@ -392,7 +394,8 @@
             <li class="person">
               <img
                 class="person__img"
-                src="./images/team-two.jpg"
+                srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
+                src="./images/team2.jpg"
                 alt="фото Ольги Репиной"
               />
               <div class="person__cardcaption">
@@ -446,7 +449,8 @@
             <li class="person">
               <img
                 class="person__img"
-                src="./images/team-three.jpg"
+                srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
+                src="./images/team3.jpg"
                 alt="фото Николая Тарасова"
               />
               <div class="person__cardcaption">
@@ -500,7 +504,8 @@
             <li class="person">
               <img
                 class="person__img"
-                src="./images/team-four.jpg"
+                srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
+                src="./images/team4.jpg"
                 alt="фото Михаила Ермакова"
               />
               <div class="person__cardcaption">
@@ -632,7 +637,7 @@
             >
           </address>
         </div>
-        
+
         <div class="join-us">
           <p class="join-us__invaite-text">Присоединяйтесь</p>
           <ul class="sotial-nets">

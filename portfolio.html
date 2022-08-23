@@ -13,11 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
-<!-- РАЗМЕТКА ШАПКИ -->
+    <!-- РАЗМЕТКА ШАПКИ -->
 
     <header class="header">
       <div class="conteiner conteiner--flex">
@@ -138,34 +138,54 @@
       </div>
     </header>
 
-
     <main>
       <section class="portfolio">
-
         <!-- кнопки ФИЛЬТРА -->
         <div class="conteiner">
           <h1 class="portfolio_header">Портфолио работ компании WebStudio</h1>
           <ul class="filter">
             <li>
-              <button  class="filter__button filter__button--blue" type="button" id="ALL" >Все</button>
+              <button
+                class="filter__button filter__button--blue"
+                type="button"
+                id="ALL"
+              >
+                Все
+              </button>
             </li>
             <li>
-              <button class="filter__button filter__button--grey" type="button" id="Веб-сайт" >
+              <button
+                class="filter__button filter__button--grey"
+                type="button"
+                id="Веб-сайт"
+              >
                 Веб-сайты
               </button>
             </li>
             <li>
-              <button class="filter__button filter__button--grey" type="button" id="Приложение">
+              <button
+                class="filter__button filter__button--grey"
+                type="button"
+                id="Приложение"
+              >
                 Приложения
               </button>
             </li>
             <li>
-              <button class="filter__button filter__button--grey" type="button" id="Дизайн">
+              <button
+                class="filter__button filter__button--grey"
+                type="button"
+                id="Дизайн"
+              >
                 Дизайн
               </button>
             </li>
             <li>
-              <button class="filter__button filter__button--grey" type="button" id="Маркетинг">
+              <button
+                class="filter__button filter__button--grey"
+                type="button"
+                id="Маркетинг"
+              >
                 Маркетинг
               </button>
             </li>
@@ -175,13 +195,13 @@
         <!-- CЕТКА РАБОТ -->
         <div class="conteiner">
           <ul class="projects">
-
             <li class="project__item" data-tape-card="Веб-сайт">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-1.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p1.jpg 1x, ./images/p1@2x.jpg 2x"
+                  src="./images/p1.jpg"
                   alt="поект первый"
-                 
                 />
 
                 <div class="project-overlay">
@@ -201,10 +221,11 @@
 
             <li class="project__item" data-tape-card="Дизайн">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-2.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p2.jpg 1x, ./images/p2@2x.jpg 2x"
+                  src="./images/p2.jpg"
                   alt="поект второй"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -223,10 +244,11 @@
 
             <li class="project__item" data-tape-card="Приложение">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-3.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p3.jpg 1x, ./images/p3@2x.jpg 2x"
+                  src="./images/p3.jpg"
                   alt="поект третий"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -244,10 +266,11 @@
 
             <li class="project__item" data-tape-card="Маркетинг">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project4.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p4.jpg 1x, ./images/p4@2x.jpg 2x"
+                  src="./images/p4.jpg"
                   alt="поект четвертый"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -265,10 +288,11 @@
 
             <li class="project__item" data-tape-card="Приложение">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-4.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p5.jpg 1x, ./images/p5@2x.jpg 2x"
+                  src="./images/p5.jpg"
                   alt="поект пятый"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -286,10 +310,11 @@
 
             <li class="project__item" data-tape-card="Веб-сайт">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-6.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p6.jpg 1x, ./images/p6@2x.jpg 2x"
+                  src="./images/p6.jpg"
                   alt="поект шестой"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -307,10 +332,11 @@
 
             <li class="project__item" data-tape-card="Дизайн">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-7.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p7.jpg 1x, ./images/p7@2x.jpg 2x"
+                  src="./images/p7.jpg"
                   alt="поект седьмой"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -327,10 +353,11 @@
             </li>
             <li class="project__item" data-tape-card="Маркетинг">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-8.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p8.jpg 1x, ./images/p8@2x.jpg 2x"
+                  src="./images/p8.jpg"
                   alt="поект восьмой"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -348,10 +375,11 @@
 
             <li class="project__item" data-tape-card="Приложение">
               <div class="project-wrapper">
-                <img class="project-img"
-                  src="./images/project-9.png"
+                <img
+                  class="project-img"
+                  srcset="./images/p9.jpg 1x, ./images/p9@2x.jpg 2x"
+                  src="./images/p9.jpg"
                   alt="поект девятый"
-                 
                 />
                 <div class="project-overlay">
                   <p class="project-overlay__text">
@@ -371,7 +399,7 @@
       </section>
     </main>
 
-      <footer class="footer">
+    <footer class="footer">
       <div class="conteiner">
         <div class="footer__info">
           <!-- ЛОГОТИП -->
@@ -452,9 +480,8 @@
         </form>
       </div>
     </footer>
-    
+
     <script src="./script/filter_portfolio.js"></script>
     <script src="./script/close-open__mobile-menu.js"></script>
-   
   </body>
 </html>

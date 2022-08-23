@@ -9,6 +9,7 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     text-align: left;
+    vertical-align: top;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -75,10 +76,12 @@
 }
 
 .join-us {
-  margin-top: 60px;
-  @media screen and (min-width: 769px) {
+  @media screen and (max-width: 767px) {
+  margin-top: 60px;}
+  @media screen and (min-width: 768px) {
     display: inline-block;
     text-align: center;
+    vertical-align: top;
   }
   @media screen and (min-width: 1200px) {
     display: block;
@@ -86,11 +89,7 @@
     margin-left: 75px;
   }
 }
-@media screen and (min-width: 769px) {
-  .join-us {
-    margin-top: 0;
-  }
-}
+
 .join-us__invaite-text {
   font-weight: 700;
   font-size: 14px;
@@ -105,10 +104,10 @@
 }
 
 .signup_form {
-  margin-top: 60px;
-  @media screen and (min-width: 769px) {
+   @media screen and (max-width: 1199px) {
+    margin-top: 60px;
     text-align: center;
-  }
+  }  
   @media screen and (min-width: 1200px) {
     text-align: left;
     margin-left: 94px;
@@ -122,7 +121,12 @@
   color: $white;
 }
 .signup_form__input {
-  width: 358px;
+  @media screen and (max-width: 767px) {
+    
+    width: 100%;
+    display: block;
+  }
+  max-width: 450px;
   height: 50px;
   color: $white;
   padding: 16px;
