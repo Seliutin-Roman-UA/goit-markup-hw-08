@@ -385,13 +385,13 @@ body.modal-menu-open {
   margin-right: auto;
   background-color: #c4c4c4;
   background-position: 50% 50%;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-480.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/backg480.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .hero {
-    background-image: url("../images/bg-480@2x.jpg");
+    background-image: url("../images/backg480@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
