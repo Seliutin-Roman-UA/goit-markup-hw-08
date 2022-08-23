@@ -1,22 +1,30 @@
 /* СЕКЦИЯ ПОРТФОЛИО (СТРАНИЦА ПОРТФОЛИО) */
 
 .portfolio {
+   padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid #ececec;
-  padding-top: 100px;
+   @media screen and (min-width: 1200px) {
+     padding-top: 94px;
   padding-bottom: 94px;
+  }
+  
 }
 .portfolio_header {
   font-size: 0px;
 }
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   column-gap: 8px;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
+
 
 .filter__button {
   padding: 6px 22px;

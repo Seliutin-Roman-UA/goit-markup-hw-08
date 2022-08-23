@@ -104,7 +104,7 @@
 }
 
 .signup_form {
-   @media screen and (max-width: 1199px) {
+   @media screen and (max-width: 1200px) {
     margin-top: 60px;
     text-align: center;
   }  
@@ -121,10 +121,18 @@
   color: $white;
 }
 .signup_form__input {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     
     width: 100%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    @media screen and (min-width: 1200px) {
+    
+    width: 356px;
+    display: inline-block;
+   
   }
   max-width: 450px;
   height: 50px;

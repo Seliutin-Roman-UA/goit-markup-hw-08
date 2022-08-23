@@ -409,8 +409,6 @@ body.modal-menu-open {
   .hero {
     max-width: 1600px;
     height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg1600.jpg");
   }
 }
@@ -497,6 +495,8 @@ body.modal-menu-open {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 450px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -504,9 +504,9 @@ body.modal-menu-open {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .oder-form {
-    max-width: 450px;
+    max-width: 528px;
     width: 100%;
   }
 }
@@ -650,6 +650,11 @@ body.modal-menu-open {
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 8px;
+}
+@media screen and (max-width: 1199px) {
+  .new_oder-checkbox-label {
+    font-size: 12px;
+  }
 }
 
 .licence-link {
@@ -821,6 +826,12 @@ body.modal-menu-open {
   font-weight: 700;
   font-size: 28px;
 }
+@media screen and (min-width: 1200px) {
+  .team__header {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .team__persons {
@@ -937,6 +948,12 @@ body.modal-menu-open {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .client-header {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .client__list {
@@ -1098,7 +1115,7 @@ body.modal-menu-open {
   color: #ffffff;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
   .signup_form {
     margin-top: 60px;
     text-align: center;
@@ -1131,10 +1148,18 @@ body.modal-menu-open {
   background-color: transparent;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .signup_form__input {
     width: 100%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .signup_form__input {
+    width: 356px;
+    display: inline-block;
   }
 }
 
@@ -1158,9 +1183,15 @@ body.modal-menu-open {
 
 /* СЕКЦИЯ ПОРТФОЛИО (СТРАНИЦА ПОРТФОЛИО) */
 .portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-top: 1px solid #ececec;
-  padding-top: 100px;
-  padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio_header {
@@ -1169,12 +1200,16 @@ body.modal-menu-open {
 
 .filter {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
   column-gap: 8px;
-  margin-bottom: 50px;
+  row-gap: 15px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 
 .filter__button {

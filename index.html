@@ -143,12 +143,11 @@
       <!-- РАЗМЕТКА СЕКЦИИ ГЕРОЯ  -->
 
       <section class="hero">
-       
         <h2 class="hero__title">Эффективные решения для вашего бизнеса</h2>
         <button class="button hero__button--position" type="button">
           Заказать услугу
         </button>
-        
+
         <!-- /* МОДАЛЬНОЕ ОКНО И ФОРМА ЗАКАЗА */ -->
         <div class="backdrop backdrop--is-hidden" id="modal">
           <!-- /* НЕПОСРЕДСТВЕННО ФОРМА ЗАКАЗА */ -->
@@ -158,7 +157,6 @@
                 <use href="./images/symbol-defs.svg#icon-cross"></use>
               </svg>
             </button>
-            
 
             <p class="oder-form__caption">
               Оставте свои данные, мы вам перезвоним
@@ -296,33 +294,54 @@
           <h2 class="service-header">Чем мы занимаемся</h2>
           <ul class="service-list">
             <li class="service__item">
-              <img
-                class="servise__img"
-                src="./images/s1.jpg"
-                alt="Код программы на экраме планшета"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/s1-370.jpg 1x, ./images/s1-370@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/s1-370.jpg"
+                  alt="Код программы на экраме планшета"
+                  class="servise__img"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="service__caption">Десктопные приложения</p>
             </li>
             <li class="service__item">
-              <img
-                class="servise__img"
-                src="./images/s2.jpg"
-                alt="Мобильный телефон в руке"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/s2-370.jpg 1x, ./images/s2-370@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/s2-370.jpg"
+                  alt="Мобильный телефон в руке"
+                  class="servise__img"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="service__caption">Мобильные приложения</p>
             </li>
             <li class="service__item">
-              <img
-                class="servise__img"
-                src="./images/s3.jpg"
-                alt="Цветовая палитра на экране планшета"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/s3-370.jpg 1x, ./images/s3-370@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/s3-370.jpg"
+                  alt="Цветовая палитра на экране планшета"
+                  class="servise__img"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="service__caption">Графический дизайн</p>
             </li>
           </ul>
@@ -337,12 +356,35 @@
 
           <ul class="team__persons">
             <li class="person">
-              <img
-                class="person__img"
-                srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x"
-                src="./images/team1.jpg"
-                alt="фото Игоря Демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team1-270.jpg    1x,
+                    ./images/team1-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1-354.jpg    1x,
+                    ./images/team1-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1-450.jpg    1x,
+                    ./images/team1-450@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/team1-270.jpg"
+                  alt="Игорь Демьяненко"
+                  class="person__img"
+                />
+              </picture>
+
               <div class="person__cardcaption">
                 <h3 class="person__name">Игорь Демьяненко</h3>
                 <p class="person__position" lang="en">Product Designer</p>
@@ -392,12 +434,34 @@
             </li>
 
             <li class="person">
-              <img
-                class="person__img"
-                srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
-                src="./images/team2.jpg"
-                alt="фото Ольги Репиной"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team2-270.jpg    1x,
+                    ./images/team2-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team2-354.jpg    1x,
+                    ./images/team2-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team2-450.jpg    1x,
+                    ./images/team2-450@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/team2-270.jpg"
+                  alt="фото Ольги Репиной"
+                  class="person__img"
+                />
+              </picture>
               <div class="person__cardcaption">
                 <h3 class="person__name">Ольга Репина</h3>
                 <p class="person__position" lang="en">Frontend Developer</p>
@@ -447,12 +511,35 @@
             </li>
 
             <li class="person">
-              <img
-                class="person__img"
-                srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x"
-                src="./images/team3.jpg"
-                alt="фото Николая Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team3-270.jpg    1x,
+                    ./images/team3-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team3-354.jpg    1x,
+                    ./images/team3-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team3-450.jpg    1x,
+                    ./images/team3-450@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/team3-270.jpg"
+                  alt="фото Николая Тарасова"
+                  class="person__img"
+                />
+              </picture>
+
               <div class="person__cardcaption">
                 <h3 class="person__name">Николай Тарасов</h3>
                 <p class="person__position" lang="en">Marketing</p>
@@ -502,12 +589,35 @@
             </li>
 
             <li class="person">
-              <img
-                class="person__img"
-                srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x"
-                src="./images/team4.jpg"
-                alt="фото Михаила Ермакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team4-270.jpg    1x,
+                    ./images/team4-270@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team4-354.jpg    1x,
+                    ./images/team4-354@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team4-450.jpg    1x,
+                    ./images/team4-450@2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/team4-270.jpg"
+                  alt="фото Михаила Ермакова"
+                  class="person__img"
+                />
+              </picture>
+
               <div class="person__cardcaption">
                 <h3 class="person__name">Михаил Ермаков</h3>
                 <p class="person__position" lang="en">UI Designer</p>

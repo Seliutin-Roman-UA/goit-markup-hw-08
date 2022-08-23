@@ -12,6 +12,10 @@
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .client__list {
